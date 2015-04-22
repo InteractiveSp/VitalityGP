@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://213.133.138.35/VitalityGP</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>01/26/2015 12:20:22</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>01/26/2015 12:20:22</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>01/29/2015 10:57:33</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>04/13/2015 12:02:53</publishTime>
+    </File>
+    <File Include="Account/RegisterSuccess.aspx">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="App_Data/NWind.mdf">
+      <publishTime>01/26/2015 13:15:46</publishTime>
+    </File>
+    <File Include="App_Data/NWind_log.ldf">
+      <publishTime>01/26/2015 13:15:46</publishTime>
+    </File>
+    <File Include="App_Data/SideMenu.xml">
+      <publishTime>01/26/2015 12:20:27</publishTime>
+    </File>
+    <File Include="App_Data/TopMenu.xml">
+      <publishTime>01/26/2015 14:34:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:22:54</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Xpo.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v14.2.dll">
+      <publishTime>01/05/2015 15:22:54</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Xpo.v14.2.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Xpo.v14.2.Extensions.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Xpo.v14.2.Web.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:22:54</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Xpo.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:22:54</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Xpo.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:22:54</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Xpo.v14.2.resources.dll">
+      <publishTime>01/05/2015 15:23:18</publishTime>
+    </File>
+    <File Include="bin/VitalityGP.dll">
+      <publishTime>04/20/2015 15:28:04</publishTime>
+    </File>
+    <File Include="bin/VitalityGP.pdb">
+      <publishTime>04/20/2015 15:28:04</publishTime>
+    </File>
+    <File Include="bin/VitalityGP.xml">
+      <publishTime>04/20/2015 15:28:04</publishTime>
+    </File>
+    <File Include="Content/Images/AquaHeader.jpg">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="Content/Images/BlackGlassHeader.jpg">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="Content/Images/GlassHeader.jpg">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="Content/Images/PlasticBlueHeader.jpg">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="Content/Images/RedWineHeader.jpg">
+      <publishTime>01/26/2015 12:20:23</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>04/16/2015 14:26:17</publishTime>
+    </File>
+    <File Include="CRMDataModel.xpo">
+      <publishTime>04/13/2015 13:55:37</publishTime>
+    </File>
+    <File Include="CRMDataModel.xpo.diagram">
+      <publishTime>04/13/2015 13:55:37</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/20/2015 14:08:21</publishTime>
+    </File>
+    <File Include="EditForm.aspx">
+      <publishTime>04/20/2015 14:17:38</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/26/2015 12:20:20</publishTime>
+    </File>
+    <File Include="Light.master">
+      <publishTime>01/26/2015 12:20:21</publishTime>
+    </File>
+    <File Include="Main.master">
+      <publishTime>03/28/2015 17:21:13</publishTime>
+    </File>
+    <File Include="PrevRefs.aspx">
+      <publishTime>03/27/2015 14:44:28</publishTime>
+    </File>
+    <File Include="Root.master">
+      <publishTime>04/16/2015 15:44:01</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/20/2015 15:28:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
