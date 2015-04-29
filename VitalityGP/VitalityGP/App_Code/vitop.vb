@@ -26,7 +26,7 @@ Public Class vitop
     Public Firstname As String
     Public Lastname As String
     Public DOB As Date
-    Public Gender As Integer
+    Public Gender As String
     Public Address1 As String
     Public Address2 As String
     Public Address3 As String

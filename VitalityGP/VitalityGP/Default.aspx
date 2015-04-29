@@ -12,7 +12,7 @@
                     <dx:LayoutItem FieldName="Title">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer1" runat="server">
-                                <dx:ASPxComboBox ID="cboTitle" runat="server">
+                                <dx:ASPxComboBox ID="cboTitle" runat="server" MaxLength="50">
                                     <Items>
                                         <dx:ListEditItem Text="Miss." Value="Miss." />
                                         <dx:ListEditItem Text="Mrs." Value="Mrs." />
@@ -40,7 +40,7 @@
                     <dx:LayoutItem FieldName="Firstname">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer2" runat="server">
-                                <dx:ASPxTextBox ID="txtFirstName" runat="server" Width="170px">
+                                <dx:ASPxTextBox ID="txtFirstName" runat="server" Width="170px" MaxLength="20">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -51,7 +51,7 @@
                     <dx:LayoutItem FieldName="Lastname">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer3" runat="server">
-                                <dx:ASPxTextBox ID="txtLastname" runat="server" Width="170px">
+                                <dx:ASPxTextBox ID="txtLastname" runat="server" Width="170px" MaxLength="20">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -91,7 +91,7 @@
                     <dx:LayoutItem FieldName="PolicyNumber">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer6" runat="server">
-                                <dx:ASPxTextBox ID="txtPolicyNumber" runat="server" Width="170px">
+                                <dx:ASPxTextBox ID="txtPolicyNumber" runat="server" Width="170px" MaxLength="10">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -107,7 +107,7 @@
                     <dx:LayoutItem FieldName="Address1" ColSpan="2">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer7" runat="server">
-                                <dx:ASPxTextBox ID="txtAddress1" runat="server" Width="150px" MaxLength="50">
+                                <dx:ASPxTextBox ID="txtAddress1" runat="server" Width="150px" MaxLength="40">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -118,7 +118,7 @@
                     <dx:LayoutItem FieldName="Address2" ColSpan="2">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer8" runat="server">
-                                <dx:ASPxTextBox ID="txtAddress2" runat="server" Width="150px" MaxLength="50">
+                                <dx:ASPxTextBox ID="txtAddress2" runat="server" Width="150px" MaxLength="40">
                                 </dx:ASPxTextBox>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
@@ -126,7 +126,7 @@
                     <dx:LayoutItem FieldName="Address3" ColSpan="2">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer9" runat="server">
-                                <dx:ASPxTextBox ID="txtAddress3" runat="server" Width="150px" MaxLength="50">
+                                <dx:ASPxTextBox ID="txtAddress3" runat="server" Width="150px" MaxLength="40">
                                 </dx:ASPxTextBox>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
@@ -151,7 +151,7 @@
                     <dx:LayoutItem Caption="Contact Name" ColSpan="2">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer11" runat="server">
-                                <dx:ASPxTextBox ID="txtAltContact" runat="server" Width="300px" MaxLength="20">
+                                <dx:ASPxTextBox ID="txtAltContact" runat="server" Width="300px" MaxLength="40">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -206,7 +206,7 @@
                     <dx:LayoutItem FieldName="PresentingCondition" ColSpan="3">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer18" runat="server">
-                                <dx:ASPxTextBox ID="txtPresentingCondition" runat="server" Width="410px" MaxLength="50">
+                                <dx:ASPxTextBox ID="txtPresentingCondition" runat="server" Width="410px" MaxLength="30">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -226,7 +226,7 @@
                     <dx:LayoutItem FieldName="Symptoms" ColSpan="4">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer17" runat="server">
-                                <dx:ASPxMemo ID="txtSymptoms" runat="server" Height="71px" Width="410px">
+                                <dx:ASPxMemo ID="txtSymptoms" runat="server" Height="71px" Width="410px" MaxLength="4000">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -237,7 +237,7 @@
                     <dx:LayoutItem FieldName="OutpatientLimit" RowSpan="4" VerticalAlign="Top">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer19" runat="server">
-                                <dx:ASPxSpinEdit ID="spinOutPatientLimit" runat="server" Number="0">
+                                <dx:ASPxSpinEdit ID="spinOutPatientLimit" runat="server" Number="0" MaxLength="10">
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />
                                     </ValidationSettings>
@@ -248,10 +248,7 @@
                     <dx:LayoutItem FieldName="Excess" RowSpan="4" VerticalAlign="Top">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer ID="LayoutItemNestedControlContainer20" runat="server">
-                                <dx:ASPxSpinEdit ID="spinExcess" runat="server" Number="0">
-                                    <ValidationSettings>
-                                        <RequiredField IsRequired="True" />
-                                    </ValidationSettings>
+                                <dx:ASPxSpinEdit ID="spinExcess" runat="server" Number="0" MaxLength="10">
                                 </dx:ASPxSpinEdit>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
@@ -293,6 +290,7 @@ if (s.GetSelectedItem().value == &quot;Yes&quot;) {
                                         <dx:ListEditItem Text="Local" Value="Local" />
                                         <dx:ListEditItem Text="Countrywide" Value="Countrywide" />
                                         <dx:ListEditItem Text="Premier" Value="Premier" />
+                                        <dx:ListEditItem Text="To Be Confirmed" Value="TBC" />
                                     </Items>
                                     <ValidationSettings>
                                         <RequiredField IsRequired="True" />

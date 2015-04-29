@@ -34,7 +34,7 @@ Public Class _Default1
                 save.Firstname = txtFirstName.Text
                 save.Lastname = txtLastname.Text
                 save.DOB = dtDOB.Text
-                save.Gender = CInt(cboGender.SelectedItem.Value)
+                save.Gender = cboGender.SelectedItem.Value
                 save.Address1 = txtAddress1.Text
                 save.Address2 = txtAddress2.Text
                 save.Address3 = txtAddress3.Text
@@ -46,7 +46,14 @@ Public Class _Default1
                 'save.AuthNumber = txtAuthnumber.Text
                 save.PresentingCondition = txtPresentingCondition.Text
                 save.Symptoms = txtSymptoms.Text
-                save.Excess = spinExcess.Text
+
+                If spinExcess.Text = "" Then
+                    save.Excess = 0
+                Else
+                    save.Excess = spinExcess.Text
+                End If
+
+
                 save.OutpatientLimit = spinOutPatientLimit.Text
                 save.GPSelect = cboGPSelect.SelectedItem.Value
                 save.AltContact = txtAltContact.Text

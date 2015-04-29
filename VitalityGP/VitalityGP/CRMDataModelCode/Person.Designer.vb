@@ -3182,6 +3182,52 @@ Namespace CRM
                 SetPropertyValue(Of Decimal)("pers_corpfollowup", fpers_corpfollowup, value)
             End Set
         End Property
+        Dim fpers_externalref As String
+        <Size(10)> _
+        Public Property pers_externalref() As String
+            Get
+                Return fpers_externalref
+            End Get
+            Set(ByVal value As String)
+                SetPropertyValue(Of String)("pers_externalref", fpers_externalref, value)
+            End Set
+        End Property
+        Dim fpers_corpspconfee As Decimal
+        Public Property pers_corpspconfee() As Decimal
+            Get
+                Return fpers_corpspconfee
+            End Get
+            Set(ByVal value As Decimal)
+                SetPropertyValue(Of Decimal)("pers_corpspconfee", fpers_corpspconfee, value)
+            End Set
+        End Property
+        Dim fpers_corpspconsfollowup As Decimal
+        Public Property pers_corpspconsfollowup() As Decimal
+            Get
+                Return fpers_corpspconsfollowup
+            End Get
+            Set(ByVal value As Decimal)
+                SetPropertyValue(Of Decimal)("pers_corpspconsfollowup", fpers_corpspconsfollowup, value)
+            End Set
+        End Property
+        Dim fpers_corpspfollowup As Decimal
+        Public Property pers_corpspfollowup() As Decimal
+            Get
+                Return fpers_corpspfollowup
+            End Get
+            Set(ByVal value As Decimal)
+                SetPropertyValue(Of Decimal)("pers_corpspfollowup", fpers_corpspfollowup, value)
+            End Set
+        End Property
+        Dim fpers_corpspfee As Decimal
+        Public Property pers_corpspfee() As Decimal
+            Get
+                Return fpers_corpspfee
+            End Get
+            Set(ByVal value As Decimal)
+                SetPropertyValue(Of Decimal)("pers_corpspfee", fpers_corpspfee, value)
+            End Set
+        End Property
     End Class
 
 End Namespace
