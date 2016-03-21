@@ -52,9 +52,12 @@ Public Class _Default1
                 Else
                     save.Excess = spinExcess.Text
                 End If
+                If spinOutPatientLimit.Text = "" Then
+                    save.OutpatientLimit = 0
+                Else
+                    save.OutpatientLimit = spinOutPatientLimit.Text
+                End If
 
-
-                save.OutpatientLimit = spinOutPatientLimit.Text
                 save.GPSelect = cboGPSelect.SelectedItem.Value
                 save.AltContact = txtAltContact.Text
 
