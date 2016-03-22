@@ -21,7 +21,12 @@ Public Class Global_asax
 
 
         XpoDefault.Session = Nothing
-        XpoDefault.DataLayer = XpoDefault.GetDataLayer(MSSqlConnectionProvider.GetConnectionString("ALLIANCE-SQL", "sa", "ferrett", "VitalityGP"), AutoCreateOption.DatabaseAndSchema)
+        If Environment.MachineName = "JOHN-PC2" Then
+            XpoDefault.DataLayer = XpoDefault.GetDataLayer(MSSqlConnectionProvider.GetConnectionString("JOHN-PC2\SQLEXPRESS", "madcap", "ferrett", "VitalityGP"), AutoCreateOption.SchemaOnly)
+        Else
+            XpoDefault.DataLayer = XpoDefault.GetDataLayer(MSSqlConnectionProvider.GetConnectionString("ALLIANCE-SQL", "sa", "ferrett", "VitalityGP"), AutoCreateOption.DatabaseAndSchema)
+        End If
+
         ' XpoDefault.Session = 
         '   session = XpoHelper.GetDataLayer()
         ' XpoDefault.Session = session

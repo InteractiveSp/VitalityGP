@@ -8,10 +8,8 @@ Public Class _Default1
         'XpoDataSource2.Session = session
 
 
-        Dim session As Session = XpoHelper2.GetNewSession(XpoHelper2.Database.XpoWebTest)
+        Dim session As Session = XpoHelper2.GetNewSession(XpoHelper2.Database.CRM)
         XpoDataSource2.Session = session
-
-
 
     End Sub
 
@@ -46,7 +44,7 @@ Public Class _Default1
                 'save.AuthNumber = txtAuthnumber.Text
                 save.PresentingCondition = txtPresentingCondition.Text
                 save.Symptoms = txtSymptoms.Text
-
+                save.StaffClaim = chkStaffClaim.Checked.ToString
                 If spinExcess.Text = "" Then
                     save.Excess = 0
                 Else

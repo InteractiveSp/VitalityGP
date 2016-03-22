@@ -131,6 +131,15 @@ Partial Public Class EditForm
     Protected WithEvents txtPolicyNumber As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
+    '''ASPxFormLayout1_E1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ASPxFormLayout1_E1 As Global.DevExpress.Web.ASPxCheckBox
+
+    '''<summary>
     '''LayoutItemNestedControlContainer7 control.
     '''</summary>
     '''<remarks>

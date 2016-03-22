@@ -49,5 +49,6 @@ Public Class vitop
     Public AsRef As Integer
     Public GPID As Integer
     Public AltContact As String
+    Public StaffClaim As String
 
 End Class

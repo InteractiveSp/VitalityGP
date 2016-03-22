@@ -36,9 +36,15 @@ Public NotInheritable Class XpoHelper2
 
         Select Case db
             Case Database.XpoWebTest
-                conn = MSSqlConnectionProvider.GetConnectionString("ALLIANCE-SQL", "sa", "ferrett", "VitalityGP") + ";Connect Timeout=60"
+
+                If Environment.MachineName = "JOHN-PC2" Then
+                    conn = MSSqlConnectionProvider.GetConnectionString("JOHN-PC2\SQLEXPRESS", "madcap", "ferrett", "VitalityGP")
+                Else
+                    conn = MSSqlConnectionProvider.GetConnectionString("ALLIANCE-SQL", "sa", "ferrett", "VitalityGP") + ";Connect Timeout=60"
+                End If
+
                 dict = New ReflectionDictionary()
-                store = XpoDefault.GetConnectionProvider(conn, AutoCreateOption.SchemaAlreadyExists)
+                store = XpoDefault.GetConnectionProvider(conn, AutoCreateOption.SchemaOnly)
                 dict.GetDataStoreSchema(GetType(vitop).Assembly)
                 Exit Select
             Case Database.CRM
@@ -46,8 +52,11 @@ Public NotInheritable Class XpoHelper2
 
                 '   CRM.ConnectionHelper.Connect(..Connect(AutoCreateOption.SchemaAlreadyExists
 
-
-                conn = MSSqlConnectionProvider.GetConnectionString("ALLIANCE-SQL", "madcap", "ferrett", "CRM")
+                If Environment.MachineName = "JOHN-PC2" Then
+                    conn = MSSqlConnectionProvider.GetConnectionString("JOHN-PC2\SQLEXPRESS", "madcap", "ferrett", "VitalityGP")
+                Else
+                    conn = MSSqlConnectionProvider.GetConnectionString("ALLIANCE-SQL", "madcap", "ferrett", "CRM")
+                End If
                 dict = New ReflectionDictionary()
                 store = XpoDefault.GetConnectionProvider(conn, AutoCreateOption.SchemaAlreadyExists)
                 dict.GetDataStoreSchema(GetType(VitGP).Assembly)

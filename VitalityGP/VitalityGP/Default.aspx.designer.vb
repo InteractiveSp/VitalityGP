@@ -131,6 +131,15 @@ Partial Public Class _Default1
     Protected WithEvents txtPolicyNumber As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
+    '''chkStaffClaim control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkStaffClaim As Global.DevExpress.Web.ASPxCheckBox
+
+    '''<summary>
     '''LayoutItemNestedControlContainer7 control.
     '''</summary>
     '''<remarks>
